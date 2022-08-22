@@ -22,7 +22,7 @@ class NewReminder : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding?.root)
 
-        binding?.timePick?.setIs24HourView(true);
+        binding?.timePick?.setIs24HourView(true)
 
         binding?.btnCreateEditReminder?.setOnClickListener {
             if (validateText()) {
