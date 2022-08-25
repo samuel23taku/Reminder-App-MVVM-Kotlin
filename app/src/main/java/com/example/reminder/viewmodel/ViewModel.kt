@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 
 class ViewModel(application:Application) :AndroidViewModel(application) {
     var allReminders:LiveData<List<Reminder>>
-    var repository:ReminderRepository
+    private var repository:ReminderRepository
 
     init {
         val dao = ReminderDatabase.getInstance(application).reminderDao()

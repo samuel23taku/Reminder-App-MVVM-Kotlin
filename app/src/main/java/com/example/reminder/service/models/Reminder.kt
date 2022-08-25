@@ -4,6 +4,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.reminder.constants.Constants.TABLENAME
+import java.io.Serializable
 
 
 @Entity(tableName = TABLENAME)
@@ -13,4 +14,4 @@ data class Reminder(
     @ColumnInfo(name="subtitle") val subtitle:String,
     @ColumnInfo(name="date") val time:String,
     @ColumnInfo(name="isCompleted") val isCompleted:Int
-)
+):Serializable
