@@ -25,6 +25,7 @@
                 android:textSize="20sp"
                 android:text="Testing Text"/>
             <TextView
+                android:id="@+id/tv_subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Subtitle"/>
@@ -40,14 +41,25 @@
                     android:layout_marginEnd="10dp"
                     android:src="@drawable/ic_baseline_access_time_24"/>
                 <TextView
+                    android:id="@+id/tv_date_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Jan  16:19"/>
             </LinearLayout>
         </LinearLayout>
-        <com.google.android.material.checkbox.MaterialCheckBox
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <androidx.appcompat.widget.ActionMenuView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
 
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

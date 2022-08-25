@@ -1,11 +1,11 @@
-package com.example.reminder.database
+package com.example.reminder.service.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.reminder.constants.Constants
-import com.example.reminder.models.Reminder
+import com.example.reminder.service.models.Reminder
 
 @Database (entities = [Reminder::class], version = 1)
 abstract class ReminderDatabase : RoomDatabase() {

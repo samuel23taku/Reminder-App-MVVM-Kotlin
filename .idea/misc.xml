@@ -8,7 +8,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_new_reminder.xml" value="0.2109375" />
         <entry key="app/src/main/res/layout/ic_baseline_access_time_24.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/item_reminder.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_reminder.xml" value="0.22" />
       </map>
     </option>
   </component>
