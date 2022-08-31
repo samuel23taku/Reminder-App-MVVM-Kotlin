@@ -3,11 +3,11 @@ package com.example.reminder.service.models
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.reminder.constants.Constants.TABLENAME
+import com.example.reminder.constants.Constants.TABLE_NAME
 import java.io.Serializable
 
 
-@Entity(tableName = TABLENAME)
+@Entity(tableName = TABLE_NAME)
 data class Reminder(
     @PrimaryKey(autoGenerate = true) val reminderId:Int,
     @ColumnInfo(name="title") val title:String,

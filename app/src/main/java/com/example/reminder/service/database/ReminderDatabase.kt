@@ -23,7 +23,7 @@ abstract class ReminderDatabase : RoomDatabase() {
                     instance = Room.databaseBuilder(
                         context.applicationContext,
                         ReminderDatabase::class.java,
-                        Constants.TABLENAME
+                        Constants.TABLE_NAME
                     ).fallbackToDestructiveMigration().build()
                     INSTANCE = instance
                 }

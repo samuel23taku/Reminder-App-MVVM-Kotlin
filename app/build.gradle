@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.reminder"
-        minSdk 26
-        targetSdk 32
+        minSdk 28
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -37,6 +37,7 @@ android {
 apply plugin: 'kotlin-kapt'
 
 dependencies {
+    implementation 'androidx.work:work-runtime-ktx:2.5.0'
     def room_version = "2.4.3"
     def activityVersion = '1.5.1'
 
