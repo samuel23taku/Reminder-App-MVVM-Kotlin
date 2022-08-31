@@ -55,6 +55,9 @@ class NewReminder : AppCompatActivity() {
 
     private fun initializeView() {
         binding?.timePick?.setIs24HourView(true)
+        binding?.btnBack?.setOnClickListener {
+            finish()
+        }
         binding?.btnCreateEditReminder?.setOnClickListener {
             val isTextValidate = validateText()
             if (isTextValidate) {

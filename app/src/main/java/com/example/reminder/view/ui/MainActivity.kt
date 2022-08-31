@@ -11,11 +11,11 @@ import com.example.reminder.view.adapters.ReminderAdapter
 import com.example.reminder.databinding.ActivityMainBinding
 import com.example.reminder.service.models.Reminder
 import com.example.reminder.view.adapters.DeleteReminderInterface
-import com.example.reminder.view.adapters.ReminderClickInterface
-import com.example.reminder.view.adapters.OnReminderCheckBoxClickInterface
+import com.example.reminder.view.adapters.ReminderClickedInterface
+import com.example.reminder.view.adapters.OnReminderCheckBoxClickedInterface
 import com.example.reminder.viewmodel.ViewModel
 
-class MainActivity : AppCompatActivity(),ReminderClickInterface,DeleteReminderInterface,OnReminderCheckBoxClickInterface{
+class MainActivity : AppCompatActivity(),ReminderClickedInterface,DeleteReminderInterface,OnReminderCheckBoxClickedInterface{
     private var binding : ActivityMainBinding? = null
     private lateinit var viewModel: ViewModel
     private lateinit var reminderAdapter: ReminderAdapter
@@ -64,5 +64,10 @@ class MainActivity : AppCompatActivity(),ReminderClickInterface,DeleteReminderIn
 
     override fun onReminderCheckBoxClick(reminder: Reminder) {
         viewModel.updateReminder(reminder)
+    }
+
+    override fun onDestroy() {
+        binding = null
+        super.onDestroy()
     }
 }

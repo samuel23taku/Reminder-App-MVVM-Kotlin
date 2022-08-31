@@ -11,8 +11,8 @@ import java.util.*
 
 class ReminderAdapter(
     private val deleteReminderInterface: DeleteReminderInterface,
-    private val reminderClickedInterface: ReminderClickInterface,
-    private val reminderCheckBoxClickInterface: OnReminderCheckBoxClickInterface
+    private val reminderClickedInterface: ReminderClickedInterface,
+    private val reminderCheckBoxClickInterface: OnReminderCheckBoxClickedInterface
 ) :
     RecyclerView.Adapter<ReminderAdapter.CustomViewHolder>() {
 
@@ -91,10 +91,10 @@ interface DeleteReminderInterface {
     fun onClickDeleteReminder(reminder: Reminder)
 }
 
-interface ReminderClickInterface {
+interface ReminderClickedInterface {
     fun onReminderClick(reminder: Reminder)
 }
 
-interface OnReminderCheckBoxClickInterface{
+interface OnReminderCheckBoxClickedInterface{
     fun onReminderCheckBoxClick(reminder:Reminder)
 }
